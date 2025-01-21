@@ -107,9 +107,9 @@ public class GameGUI extends JComponent {
 	public static void main(String[] args) {
 		Runnable createShowGUI = new Runnable() {
 			public void run() {
-				int maxRows = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter number of rows", 16));
-				int maxCols = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter number of columns", 9));
-				int timerDelayInMilliSecs = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter speed in milliseconds", 4000));
+				int maxRows = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter number of rows", 10));
+				int maxCols = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter number of columns", 10));
+				int timerDelayInMilliSecs = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter speed in milliseconds", 3000));
 				GameGUI.createAndDisplayGUI(new ClearCellGame(maxRows, maxCols, new Random(1L), 1), 
 											timerDelayInMilliSecs);
 			}
