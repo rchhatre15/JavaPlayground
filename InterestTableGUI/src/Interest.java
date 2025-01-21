@@ -10,10 +10,11 @@ public class Interest extends InterestTableGUI implements EventHandler<ActionEve
 			int rateInt = Integer.parseInt(rateField.getText());
 			double timeInt = verticalSlider.getValue();
 			String ans = "";
-			for(int i = 0; i < timeInt; i++) {
+			for(int i = 1; i <= timeInt; i++) {
 				double interest = princeInt + (princeInt * (rateInt/100.0) * i);
-				ans += i + "-->" + interest + "\n";
+				ans += "Year " + i + " --> $" + interest + "\n";
 			}
+			result.setText(ans);
 			System.out.println(ans);
 		}
 		else if(arg0.getSource() == compound) {
@@ -22,10 +23,11 @@ public class Interest extends InterestTableGUI implements EventHandler<ActionEve
 				int rateInt = Integer.parseInt(rateField.getText());
 				double timeInt = verticalSlider.getValue();
 				String ans = "";
-				for(int i = 0; i < timeInt; i++) {
+				for(int i = 1; i <= timeInt; i++) {
 					double interest = princeInt * Math.pow((1 + rateInt/100.0), i);
-					ans += i + "-->" + interest + "\n";
+					ans += "Year " + i + " --> $" + interest + "\n";
 				}
+				result.setText(ans);
 				System.out.println(ans);
 			
 		}
@@ -38,8 +40,9 @@ public class Interest extends InterestTableGUI implements EventHandler<ActionEve
 			for(int i = 0; i < timeInt; i++) {
 				double comp = princeInt * Math.pow((1 + rateInt/100.0), i);
 				double simple = princeInt + (princeInt * (rateInt/100.0) * i);
-				ans += i + "--> Simple: " + simple + " Compound: " + comp + "\n";
+				ans += "Year " + i + "--> Simple: $" + simple + " Compound: $" + comp + "\n";
 			}
+			result.setText(ans);
 			System.out.println(ans);
 		}
 

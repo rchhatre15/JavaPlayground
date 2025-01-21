@@ -27,13 +27,13 @@ public class InterestTableGUI extends Application{
 	public void start(Stage arg0) throws Exception {
 		int sceneWidth = 500, sceneHeight = 500;
 		FlowPane pane = new FlowPane();
-		TextArea result = new TextArea();
+		result = new TextArea();
 		result.setPrefHeight(120);
 		result.setPrefWidth(300);
 		pane.setHgap(10);
 		pane.setHgap(10);
 		Label principal = new Label("Principal: ");
-		Label rate = new Label("Rate: ");
+		Label rate = new Label("Rate %: ");
 		Label time = new Label("Number of Years: ");
 		principalField = new TextField();
 		rateField = new TextField();
@@ -54,6 +54,7 @@ public class InterestTableGUI extends Application{
 		pane.getChildren().addAll(simple);
 		pane.getChildren().addAll(compound);
 		pane.getChildren().addAll(both);
+		pane.getChildren().add(result);
 		Interest interest = new Interest();
 		
 		simple.setOnAction(interest);
