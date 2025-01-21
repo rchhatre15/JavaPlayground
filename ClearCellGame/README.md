@@ -34,15 +34,15 @@ java -cp src gui.GameGUI
 4. The game ends when the board fills up
 
 ## Project Structure
-'''
+```
 ClearCellGame/
 ├── src/
 │   ├── gui/
 │   │   └── GameGUI.java
-│   ├── model/
-│   │   ├── BoardCell.java
-│   │   ├── ClearCellGame.java
-│   │   └── Game.java
+│   └── model/
+│       ├── BoardCell.java
+│       ├── ClearCellGame.java
+│       └── Game.java
 ├── test/
 │   ├── StudentTests.java
 │   └── PublicTests.java
@@ -56,7 +56,7 @@ ClearCellGame/
 │   ├── pub02AnimationStepsExpectedResults.txt
 │   ├── pub03HorizontalCellsExpectedResults.txt
 │   └── pub04CollapseCellsExpectedResults.txt
-'''
+```
 
 ## Controls
 - **Mouse Click**: Clear selected cell and adjacent matching cells
