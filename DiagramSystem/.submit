@@ -1,0 +1,11 @@
+# Submit server .submit file for
+#  Course CMSC131
+#  Project Project #7: Diagram System
+
+courseName=CMSC131
+semester=202108
+projectNumber=Project #7
+courseKey=e64258c76a78dc15
+authentication.type=ldap
+baseURL=https://submit.cs.umd.edu:443/fall2021
+submitURL=https://submit.cs.umd.edu:443/fall2021/eclipse/SubmitProjectViaEclipse
