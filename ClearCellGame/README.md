@@ -38,16 +38,23 @@ ClearCellGame/
 ├── src/
 │   ├── gui/
 │   │   └── GameGUI.java
-│   └── model/
-│       ├── BoardCell.java
-│       ├── ClearCellGame.java
-│       └── Game.java
+│   ├── model/
+│   │   ├── BoardCell.java
+│   │   ├── ClearCellGame.java
+│   │   └── Game.java
+├── test/
+│   ├── StudentTests.java
+│   └── PublicTests.java
 ├── results/
 │   ├── pub01EmptyBoardResults.txt
 │   ├── pub02AnimationStepsResults.txt
 │   ├── pub03HorizontalCellsResults.txt
 │   └── pub04CollapseCellsResults.txt
-└── README.md
+├── expectedResults/
+│   ├── pub01EmptyBoardExpectedResults.txt
+│   ├── pub02AnimationStepsExpectedResults.txt
+│   ├── pub03HorizontalCellsExpectedResults.txt
+│   └── pub04CollapseCellsExpectedResults.txt
 
 ## Controls
 - **Mouse Click**: Clear selected cell and adjacent matching cells
