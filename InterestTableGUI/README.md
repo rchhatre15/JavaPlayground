@@ -3,6 +3,7 @@
 A JavaFX application that calculates and displays both simple and compound interest over time.
 
 ## Project Structure
+'''
 InterestTableGUI/
 ├── src/
 │   ├── Interest.java
@@ -10,6 +11,7 @@ InterestTableGUI/
 └── bin/
     ├── Interest.class
     └── InterestTableGUI.class
+'''
 
 ## Prerequisites
 

@@ -18,6 +18,7 @@ A Java-based HTML page generator that allows programmatic creation of web pages 
 - HTML file generation with UTF-8 encoding
 
 ## Project Structure
+'''
 WebPageGen/
 ├── src/
 │   ├── model/
@@ -36,6 +37,7 @@ WebPageGen/
 │       ├── PublicTests.java
 │       ├── StudentTests.java
 │       └── TestingSupport.java
+'''
 
 ## Usage Example
 
